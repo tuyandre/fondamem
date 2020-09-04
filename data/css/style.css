@@ -574,6 +574,12 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 1em 0;
   clear: both;
 }
+#fh5co-blog-popular{
+  background-image: url(../images/background/bg1.jpg) !important ;
+}
+ /* #sidebar{
+  background-image: url(../images/background/bg9.jpg) !important ; 
+} */
 @media screen and (max-width: 768px) {
   #fh5co-about,
   #fh5co-content,
@@ -588,6 +594,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-no-pd-top {
   padding-top: 1.5em !important;
+  background-image: url(../images/background/bg2.jpg) !important ;
+  opacity: 3;
 }
 
 #fh5co-blog-popular {
@@ -896,7 +904,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-footer {
-  background: #efefef !important;
+  /* background: #efefef !important; */
+  background-image: url(../images/background/bg1.jpg);
 }
 #fh5co-footer .fh5co-footer-links {
   padding: 0;
