@@ -46,9 +46,10 @@
 
 
 	</head>
-	<body>
+	<body style="background-color: lightyellow;">
 		
 	<div class="fh5co-loader"></div>
+
 	<div id="page">
 		<nav class="fh5co-nav" role="navigation">
 			<div class="container-fluid">
@@ -56,20 +57,23 @@
 					<div class="top-menu">
 						<div class="container">
 							<div class="row">
+								<div class="col-sm-1 logo-brand">
+									<img src="data/logo/logo1.jpg" alt="logo" style="width: 50px;height:50px;border-radius:50%;">
+								</div>
 								<div class="col-sm-7 text-left menu-1">
 									<ul>
 										<li class="active"><a href="index.html">Home</a></li>
 									
-										<li><a href="#">About</a></li>
-										<li><a href="#">Contact</a></li>
+										<li><a href="pages/aboutus.html">About</a></li>
+										<li><a href="pages/contactus.html">Contact</a></li>
 									</ul>
 								</div>
-								<div class="col-sm-5">
+								<div class="col-sm-4">
 									<ul class="fh5co-social-icons">
 										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
 										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
 										<li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
-										<li><a href="#"><i class="icon-dribbble-with-circle"></i></a></li>
+										<li style="margin-left: 50px;"><a href="#"><i class="icon-arrow-right"></i> Login</a></li>
 									</ul>
 								</div>
 							</div>
@@ -84,7 +88,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">
-						<div class="flexslider animate-box">
+						<div class="flexslider animate-box" style="margin-top: 50px;">
 							<ul class="slides">
 							   <li style="background-image: url(data/images/background/bg.jpg);">
 								   <div class="overlay-gradient"></div>
@@ -93,8 +97,8 @@
 										   <div class="col-md-10 col-md-offset-1 slider-text">
 											   <div class="slider-text-inner">
 												   <h1>Not Every Project Needs To Be Perfect</h1>
-													<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-													<p class="ct"><a href="#">Learn More <i class="icon-arrow-right"></i></a></p>
+													<h2>visit the best place <a href="pages/placeDetail.html" target="_blank">Iriba</a></h2>
+													<p class="ct"><a href="pages/placeDetail.html">Learn More <i class="icon-arrow-right"></i></a></p>
 											   </div>
 										   </div>
 									   </div>
@@ -106,9 +110,9 @@
 									   <div class="row">
 										   <div class="col-md-10 col-md-offset-1 slider-text">
 											   <div class="slider-text-inner">
-												   <h1>Minimal &amp; Clean Blog WordPress</h1>
-													<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-													<p class="ct"><a href="#">Learn More <i class="icon-arrow-right"></i></a></p>
+												   <h1>Learn more about swimming</h1>
+													<h2>please  <a href="pages/contactus.html" target="_blank">contact us</a></h2>
+													<p class="ct"><a href="pages/placeDetail.html">Learn More <i class="icon-arrow-right"></i></a></p>
 											   </div>
 										   </div>
 									   </div>
@@ -120,9 +124,9 @@
 									   <div class="row">
 										   <div class="col-md-10 col-md-offset-1 slider-text">
 											   <div class="slider-text-inner">
-												   <h1>What Would You Like To Learn?</h1>
-													<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-													<p class="ct"><a href="#">Learn More <i class="icon-arrow-right"></i></a></p>
+												   <h1>What Would You Like To Know?</h1>
+													<h2>Fell Free for <a href="pages/contactus.html" target="_blank">Contact Us</a></h2>
+													<p class="ct"><a href="pages/placeDetail.html">Learn More <i class="icon-arrow-right"></i></a></p>
 											   </div>
 										   </div>
 									   </div>
@@ -132,20 +136,28 @@
 						  </div>
 					</div>
 					<div class="col-md-4">
-						<a href="#" class="featured text-center animate-box" style="background-image: url(data/products/prod.jpg);">
-							<div class="desc">
-								<span class="date">Dec 25, 2016</span>
-								<h3>Every Start has an End</h3>
-								<span class="category">Inspirational</span>
+						<div class="row animate-box" style="margin-top: 50px;">
+							<div class="col-md-12 col-md-offset-0 text-center fh5co-heading" style="margin-bottom: 1em;">
+								<h2><span>Latest Products</span></h2>
 							</div>
-						</a>
-						<a href="#" class="featured text-center animate-box" style="background-image: url(data/products/prod1.jpg);">
-							<div class="desc">
-								<span class="date">Dec 25, 2016</span>
-								<h3>Most Beautiful Website in 2016</h3>
-								<span class="category">Inspirational</span>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 col-md-12">
+								<a href="pages/productDetail.html" class="featured text-center animate-box" style="background-image: url(data/products/prod.jpg);height: 100px;">
+									<div class="desc">
+										<h3>Flat Water Canoe Package</h3>
+									</div>
+								</a>
 							</div>
-						</a>
+							<div class="col-sm-12 col-md-12">
+								<a href="pages/productDetail.html" class="featured text-center animate-box" style="background-image: url(data/products/prod1.jpg);height: 100px;">
+									<div class="desc">
+										<h3>Premium Watersports Full Cut Water-Rescue HelmetCanoeing Kayaking Sailing Boating Helmets</h3>
+									</div>
+								</a>
+							</div>
+						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -162,41 +174,143 @@
 				<div class="row">
 					<div class="col-md-3">
 						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="data/products/prod3.jpg" alt=""></a>
+							<a href="pages/productDetail.html"><img class="img-responsive" style="height: 200px;" src="data/products/prod3.jpg" alt=""></a>
 							<div class="blog-text">
-								<h3><a href="#">Conquer The World</a></h3>
+								<h3><a href="pages/productDetail.html">Conquer The World</a></h3>
 							</div> 
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="data/products/prod4.png" alt=""></a>
+							<a href="pages/productDetail.html"><img class="img-responsive" style="height: 200px;" src="data/products/prod4.png" alt=""></a>
 							<div class="blog-text">
-								<h3><a href="#">List Minimal Design</a></h3>
+								<h3><a href="pages/productDetail.html">XR-Trekking</a></h3>
 							</div> 
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="data/products/prod2.png" alt=""></a>
+							<a href="pages/productDetail.html"><img class="img-responsive" style="height: 200px;" src="data/products/prod2.png" alt=""></a>
 							<div class="blog-text">
-								<h3><a href="#">Modeling Spotted</a></h3>
+								<h3><a href="pages/productDetail.html">sticker canoes</a></h3>
 							</div> 
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="data/products/prod1.jpg" alt=""></a>
+							<a href="pages/productDetail.html"><img class="img-responsive" style="height: 200px;" src="data/products/prod1.jpg" alt=""></a>
 							<div class="blog-text">
-								<h3><a href="#">Around The World</a></h3>
+								<h3><a href="pages/productDetail.html">Helmet Canoeing</a></h3>
 							</div> 
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
 
-
+		<div id="fh5co-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 col-padded-right" >
+						<div class="row">
+							<div class="side animate-box">
+								<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+									<h2><span>Tourism Places</span></h2>
+								</div>
+							</div>
+							<div class="col-md-6" style="background-color: lightskyblue;margin-bottom: 10px !important;">
+								<div class="fh5co-blog animate-box">
+									<div class="title text-center">
+										<h3><a href="pages/placeDetail.html">place1</a></h3>
+										<span class="category">tourism</span>
+									</div>
+									<a href="pages/placeDetail.html"><img class="img-responsive" src="data/images/background/bg2.jpg" style="height: 220px;" alt=""></a>
+									<div class="blog-text text-center">
+										<p>Some detail but not more</p>
+									
+									</div> 
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="fh5co-blog animate-box">
+									<div class="title text-center">
+										<h3><a href="#">Place2</a></h3>
+										<span class="category">Lifestyle</span>
+									</div>
+									<a href="#"><img class="img-responsive" src="data/images/background/bg3.jpg" style="height: 220px;" alt=""></a>
+									<div class="blog-text text-center">
+										<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										
+									</div> 
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="fh5co-blog animate-box">
+									<div class="title text-center">
+										<h3><a href="#">Place 3</a></h3>
+										<span class="category">Lifestyle</span>
+									</div>
+									<a href="#"><img class="img-responsive" src="data/images/background/bg4.jpg" alt="" style="height: 220px;"></a>
+									<div class="blog-text text-center">
+										<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										
+									</div> 
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="fh5co-blog animate-box">
+									<div class="title text-center">
+										<h3><a href="#">Place 4</a></h3>
+										<span class="category">Lifestyle</span>
+									</div>
+									<a href="#"><img class="img-responsive" src="data/images/background/bg5.jpg" alt="" style="height: 220px;"></a>
+									<div class="blog-text text-center">
+										<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<aside id="sidebar">
+						<div class="col-md-3">
+							<div class="side animate-box">
+								<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+									<h2><span>Advertise</span></h2>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-sm-12 col-md-12">
+									<a target="_blank" href="https://www.police.gov.rw/home/" class="featured text-center animate-box"><img src="data/images/police.jpg" alt="police" class="advertise">
+										<div class="desc">
+											<h3>Intego ni GERAYO AMAHORO</h3>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-12 col-md-12">
+									<a target="_blank" href="http://rwandafoam.com/" class="featured text-center animate-box" ><img src="data/images/rwandafoam.jpg" alt="police" class="advertise">
+										<div class="desc">
+											<h3>Sinzira neza Uryama kuri matera Nziza ya RwandaFoam</h3>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-12 col-md-12">
+									<a target="_blank" href="https://www.inyangeindustries.com/" class="featured text-center animate-box" ><img src="data/images/inyange.jpeg" alt="police" class="advertise">
+										<div class="desc">
+											<h3>Gira ubuzima bwiza unywa jus y'umwimerere y'INYANGE</h3>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</aside>
+	
+				</div>
+			</div>
+		</div>
 
 
 		<footer id="fh5co-footer" role="contentinfo">
@@ -209,9 +323,9 @@
 					<div class="col-md-4 col-md-push-1">
 						<h4>Links</h4>
 						<ul class="fh5co-footer-links">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="pages/aboutus.html">About</a></li>
+							<li><a href="pages/contactus.html">Contact</a></li>
 						</ul>
 					</div>
 	
@@ -238,7 +352,6 @@
 								<li><a href="#"><i class="icon-twitter"></i></a></li>
 								<li><a href="#"><i class="icon-facebook"></i></a></li>
 								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li>
 							</ul>
 						</p>
 					</div>

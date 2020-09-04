@@ -571,7 +571,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-blog-popular,
 #fh5co-contact,
 #fh5co-footer {
-  padding: 7em 0;
+  padding: 1em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -582,7 +582,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-blog-popular,
   #fh5co-contact,
   #fh5co-footer {
-    padding: 3em 0;
+    padding: 1em 0 !important;
   }
 }
 
@@ -624,7 +624,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 1em;
   position: relative;
 }
 .fh5co-heading:after {
@@ -871,7 +871,7 @@ h1, h2, h3, h4, h5, h6, figure {
   text-align: center;
   margin-bottom: 30px;
 }
-.fh5co-staff img {
+.fh5co-staff img,.logo-brand img {
   width: 140px;
   height: 140px;
   margin: 0 auto;
@@ -896,7 +896,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-footer {
-  background: #efefef;
+  background: #390099 !important;
 }
 #fh5co-footer .fh5co-footer-links {
   padding: 0;
@@ -920,7 +920,7 @@ h1, h2, h3, h4, h5, h6, figure {
   text-decoration: underline;
 }
 #fh5co-footer .fh5co-widget {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-footer .fh5co-widget {
@@ -1356,7 +1356,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .row-pb-md {
-  padding-bottom: 4em !important;
+  padding-bottom: 1em !important;
 }
 
 .row-pb-sm {
