@@ -7,6 +7,6 @@ if(isset($_SESSION["email"])){
     unset($_SESSION["email"]);
     unset($_SESSION["name"]);
     session_destroy();
-    header("Location:../../index.html");
+    header("Location:../../auth/login.html");
 }
 ?>

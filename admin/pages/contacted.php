@@ -31,6 +31,7 @@ if (isset($_GET['logout'])) {
   <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
+       <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
   <!-- Morris chart -->
   <link rel="stylesheet" href="../bower_components/morris.js/morris.css">
@@ -44,7 +45,7 @@ if (isset($_GET['logout'])) {
   <link rel="stylesheet" href="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 	<link href="../data/logo.png" rel="shortcut icon"/>
 
- 
+
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -123,12 +124,25 @@ if (isset($_GET['logout'])) {
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
-    
+      <!-- search form -->
+      <!-- <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form> -->
+      <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li >
-          <a href="#"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+          <a href="../home.php"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+        </li>
+        <li >
+          <a href="#"><i class="fa fa-file-o"></i> <span>Contact Us</span></a>
         </li>
         <li class="treeview">
           <a href="#">
@@ -152,23 +166,11 @@ if (isset($_GET['logout'])) {
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Add New</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> All Products</a></li>
+            <li><a href="#"><i class="fa fa-plus"></i> Add New</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> All Products</a></li>
           </ul>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-global"></i>
-            <span>Visiting Place</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Add New</a></li>
-            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> All Place</a></li>
-          </ul>
-        </li>
+       
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -184,22 +186,42 @@ if (isset($_GET['logout'])) {
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li class="active">Contact Us</li>
       </ol>
     </section>
 
       <!-- Main content -->
       <section class="content">
-      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">All Message Sent Through Contact us</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="contactus" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>Full Name</th>
+                  <th>Telephone</th>
+                  <th>Email</th>
+                  <th>Date</th>
+                  <th>Message</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
 
 
-
-
-
-
-
-
-      
+                </tbody>
+                </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        </div>
     </section>
     <!-- /.content -->
   </div>
@@ -241,16 +263,119 @@ if (isset($_GET['logout'])) {
 <!-- datepicker -->
 <script src="../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- Bootstrap WYSIHTML5 -->
-<script src=".//plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- Slimscroll -->
 <script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- DataTables -->
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="../dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
+<script src="../dist/js/bootbox.min.js" ></script>
+<script>
+
+    var table;
+    function deleteContact(id) {
+    var url = "../connection/deleteContactus.php/";
+    // var button = $(".js-delete");
+        bootbox.confirm("Are you sure you want to Delete this Message?", function (result) {
+            if (result) {
+                $.ajax({
+                    url: url,
+                    method: 'POST',
+                    data:{id:id},
+                    dataType: 'json',
+                    success: function (data) {
+                        console.log(data);
+                        
+                        table.destroy();
+                        myFunc();
+                        bootbox.alert({
+                            title: "success",
+                            message: "<i class='fa fa-warning'></i>" +
+                            " Message Deleted successful"
+                        });
+                        // table.rows(tr).remove().draw(true);
+                    }, error: function (data) {
+                        console.log(data)
+                        bootbox.alert({
+                            title: "Error",
+                            message: "<i class='fa fa-warning'></i>" +
+                            " Mesaage not deleted"
+                        });
+                    }
+                });
+    
+            }
+        })
+}
+    var table;
+var manageTable = $("#contactus");
+
+function myFunc() {
+    table = manageTable.DataTable({
+        ajax: {
+            url: "../connection/contacted.php",
+            dataSrc: ''
+        },
+        columns: [
+
+            {data: 'names'},
+            {data: 'email'},
+            {data: 'telephone'},
+            {data: 'dates'},
+            {data: 'messages'},
+            {
+                data: 'id',
+                render: function (data, type, row) {
+                    return "<button class='btn btn-danger btn-sm btn-flat js-delete' onclick='deleteContact("+row.id +")' data-url='../connection/deleteContactus.php/" + row.user_id + "'> <i class='glyphicon glyphicon-trash'></i> Delete</button>";
+                }
+            }
+        ]
+    });
+}
+
+$(document).ready(function() {
+    myFunc();
+    // manageTable.on('click', '.js-delete', function () {
+    //     var button = $(this);
+    //     bootbox.confirm("Are you sure you want to Delete this Message?", function (result) {
+    //         if (result) {
+    //             $.ajax({
+    //                 url: button.attr('data-url'),
+    //                 method: 'POST',
+    //                 data:{id:button.attr('data-id')},
+    //                 success: function (data) {
+    //                     console.log(data);
+                        
+    //                     var tr = button.parents("tr");
+    //                     bootbox.alert({
+    //                         title: "success",
+    //                         message: "<i class='fa fa-warning'></i>" +
+    //                         " Message Deleted successful"
+    //                     });
+    //                     table.rows(tr).remove().draw(true);
+    //                 }, error: function (data) {
+    //                     console.log(data)
+    //                     bootbox.alert({
+    //                         title: "Error",
+    //                         message: "<i class='fa fa-warning'></i>" +
+    //                         " Mesaage not deleted"
+    //                     });
+    //                 }
+    //             });
+    
+    //         }
+    //     })
+    // });
+
+});
+</script>
 </body>
 </html>
