@@ -618,8 +618,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-no-pd-top {
   padding-top: 1.5em !important;
-  background-image: url(../images/background/bg2.jpg) !important ;
-  opacity: 3;
+  background-image: url(../images/background/arton73.jpg) !important ;
+  opacity: 0.8;
 }
 
 #fh5co-blog-popular {
@@ -1476,5 +1476,11 @@ h1, h2, h3, h4, h5, h6, figure {
 .js .animate-box {
   opacity: 0.5;
 }
-
+.description p{
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color:rgb(28, 2, 121) !important;
+}
 /*# sourceMappingURL=style.css.map */

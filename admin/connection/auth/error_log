@@ -1,0 +1,1 @@
+[17-Jun-2018 15:36:06 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/xthmriqd/public_html/admin/admin/connection/connection.php on line 8

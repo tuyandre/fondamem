@@ -46,38 +46,13 @@
 
 
 	</head>
-	<body>
+	<body style="background-color: lightyellow; padding-left: 20px; padding-right: 20px;">
 		
 	<div class="fh5co-loader"></div>
     <div id="page">
-		<nav class="fh5co-nav" role="navigation">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="top-menu">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-7 text-left menu-1">
-									<ul>
-										<li ><a href="../index.html">Home</a></li>
-									
-										<li><a href="../pages/aboutus.html">About</a></li>
-										<li class="active"><a href="../pages/contactus.html">Contact</a></li>
-									</ul>
-								</div>
-								<div class="col-sm-5">
-									<ul class="fh5co-social-icons">
-										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
-										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
-										<li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
-										<li style="margin-left: 50px;"><a href="../admin/auth/login.html"><i class="icon-arrow-right"></i> Login</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
+	<?php
+	include '../layout/header.php';
+	?>
 
         <div id="fh5co-contact" class="fh5co-no-pd-top">
             <div class="container">
@@ -130,54 +105,9 @@
         </div>
 
 
-        <footer id="fh5co-footer" role="contentinfo">
-			<div class="container">
-				<div class="row row-pb-md">
-					<div class="col-md-4 fh5co-widget">
-						<h4>Fondmem</h4>
-						<p>FONDAMEM Is company which sell the product for swimming.</p>
-					</div>
-					<div class="col-md-4 col-md-push-1">
-						<h4>Links</h4>
-						<ul class="fh5co-footer-links">
-							<li><a href="../index.html">Home</a></li>
-							<li><a href="aboutus.html">About</a></li>
-							<li><a href="contactus.html">Contact</a></li>
-						</ul>
-					</div>
-	
-					<div class="col-md-4 col-md-push-1">
-						<h4>Contact Information</h4>
-						<ul class="fh5co-footer-links">
-							<li>Nkombo-Rusizi, <br> Iburengerazuba-RWANDA</li>
-							<li>Tel:<a href="tel://+250788780238">+250 788 780 238</a></li>
-							<li>Tel:<a href="tel://+250782321924">+250 782 321 924</a></li>
-							<li>Tel:<a href="tel://+250783814611">+250 783 814 611</a></li>
-							<li>Emai:<a href="mailto:fondamem@gmail.com">fondamem@gmail.com</a></li>
-							<li><a href="../index.html">Sport Club Activity</a></li>
-						</ul>
-					</div>
-	
-				</div>
-	
-				<div class="row copyright">
-					<div class="col-md-12 text-center">
-						<p>
-							<small class="block">&copy; 2020 . All Rights Reserved.</small> 
-							<!-- <small class="block">Designed by <a href="https://web.facebook.com/tuyandre20" target="_blank">Tuyandre</a></small> -->
-						</p>
-						<p>
-							<ul class="fh5co-social-icons">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							</ul>
-						</p>
-					</div>
-				</div>
-	
-			</div>
-		</footer>
+	<?php
+	include '../layout/footer.php';
+	?>
     </div>
     <div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>

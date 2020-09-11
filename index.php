@@ -20,7 +20,7 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-	<link href="data/logo/logo.png" rel="shortcut icon"/>
+	<link href="data/logo/logo22.jpg" rel="shortcut icon"/>
 
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
@@ -51,40 +51,10 @@
 	<div class="fh5co-loader"></div>
 
 	<div id="page"style="margin-left: 10px;margin-right:10px" >
-		<nav class="fh5co-nav" role="navigation">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="top-menu">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-1 logo-brand" style="display: flex;flex-direction: row;">
-									<img src="data/logo/logo1.jpg" alt="logo" style="width: 50px;height:50px;border-radius:50%;">
-								<!-- <h5>FONDAMEM</h5> -->
-								</div>
-								<div class="col-sm-7 text-left menu-1">
-									<ul>
-										<li ><h3 style="color:rgb(28, 2, 121);">FONDAMEM</h3></li>
-										<li class="active"><a href="index.html">Home</a></li>
-									
-										<li><a href="pages/aboutus.html">About</a></li>
-										<li><a href="pages/contactus.html">Contact</a></li>
-									</ul>
-								</div>
-								<div class="col-sm-4">
-									<ul class="fh5co-social-icons">
-										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
-										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
-										<li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
-										<li style="margin-left: 50px;float: right;"><a href="admin/auth/login.html"><i class="icon-arrow-right"></i> Login</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-
+	<?php
+	include 'layout/header.php';
+	?>
+		
 
 		<aside id="fh5co-hero">
 			<div class="container">
@@ -304,7 +274,7 @@
 								<div class="col-sm-12 col-md-12">
 									<a target="_blank" href="/index.html" class="featured text-center animate-box"><img src="data/images/graphic/5.png" alt="police" class="advertise" style="height: 200px;">
 										<div class="desc">
-											<h3>Ubwato bwiza cyane</h3>
+											<h3>Kayaking</h3>
 										</div>
 									</a>
 								</div>
@@ -318,7 +288,7 @@
 								<div class="col-sm-12 col-md-12">
 									<a target="_blank" href="https://www.inyangeindustries.com/" class="featured text-center animate-box" ><img src="data/images/graphic/12.jpg" alt="police" class="advertise" style="height: 400px;">
 										<div class="desc">
-											<h3>Tembera mumazi ufite umutuzo</h3>
+											<h3>2 Rider Inflatable Travel Kayak by Airhead</h3>
 										</div>
 									</a>
 								</div>
@@ -330,55 +300,10 @@
 			</div>
 		</div>
 
+	<?php
+	include 'layout/footer.php';
+	?>
 
-		<footer id="fh5co-footer" role="contentinfo">
-			<div class="container">
-				<div class="row row-pb-md">
-					<div class="col-md-4 fh5co-widget">
-						<h4>Fondmem</h4>
-						<p>FONDAMEM Is company which sell the product for swimming.</p>
-					</div>
-					<div class="col-md-4 col-md-push-1">
-						<h4>Links</h4>
-						<ul class="fh5co-footer-links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="pages/aboutus.html">About</a></li>
-							<li><a href="pages/contactus.html">Contact</a></li>
-						</ul>
-					</div>
-	
-					<div class="col-md-4 col-md-push-1">
-						<h4>Contact Information</h4>
-						<ul class="fh5co-footer-links">
-							<li>Nkombo-Rusizi, <br> Iburengerazuba-RWANDA</li>
-							<li>Tel:<a href="tel://+250788780238">+250 788 780 238</a></li>
-							<li>Tel:<a href="tel://+250782321924">+250 782 321 924</a></li>
-							<li>Tel:<a href="tel://+250783814611">+250 783 814 611</a></li>
-							<li>Emai:<a href="mailto:fondamem@gmail.com">fondamem@gmail.com</a></li>
-							<li><a href="/index.html">Sport Club Activity</a></li>
-						</ul>
-					</div>
-	
-				</div>
-	
-				<div class="row copyright">
-					<div class="col-md-12 text-center">
-						<p>
-							<small class="block">&copy; 2020 . All Rights Reserved.</small> 
-							<!-- <small class="block">Designed by <a href="https://web.facebook.com/tuyandre20" target="_blank">Tuyandre</a></small> -->
-						</p>
-						<p>
-							<ul class="fh5co-social-icons">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							</ul>
-						</p>
-					</div>
-				</div>
-	
-			</div>
-		</footer>
 	</div>
     <div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>

@@ -20,7 +20,7 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-	<link href="../data/logo/logo.png" rel="shortcut icon"/>
+	<link href="../data/logo/logo22.jpg" rel="shortcut icon"/>
 
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
@@ -46,38 +46,13 @@
 
 
 	</head>
-	<body>
+	<body style="background-color: lightyellow; padding-left: 20px; padding-right: 20px;">
 		
 	<div class="fh5co-loader"></div>
     <div id="page">
-		<nav class="fh5co-nav" role="navigation">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="top-menu">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-7 text-left menu-1">
-									<ul>
-										<li ><a href="../index.html">Home</a></li>
-									
-										<li class="active"><a href="../pages/aboutus.html">About</a></li>
-										<li><a href="../pages/contactus.html">Contact</a></li>
-									</ul>
-								</div>
-								<div class="col-sm-5">
-									<ul class="fh5co-social-icons">
-										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
-										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
-										<li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
-										<li style="margin-left: 50px;"><a href="../admin/auth/login.html"><i class="icon-arrow-right"></i> Login</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
+	<?php
+	include '../layout/header.php';
+	?>
 
         <div id="fh5co-content" class="fh5co-no-pd-top">
             <div class="container">
@@ -87,12 +62,27 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
+                    <div class="col-md-10 col-md-offset-1">
                         <div class="fh5co-staff">
-                            <img src="../data/logo/logo1.jpg" alt="ceo">
+                            <img src="../data/logo/logo22.jpg" alt="ceo">
                             <h3>Emmanuel MUSHIMIYIMANA</h3>
-                            <strong class="role" style="color: black;"><b>CEO</b></strong>
-                            <p>all description about CEo or Company</p>
+							<strong class="role" style="color: black;"><b>CEO</b></strong>
+							<div class="description">
+								<h3>FONDAMEM</h3>
+								<p>
+									Fondamem is One of the leading Company which sells diffent qualities of water sports materials (Canoes, Paddles,Jerseys
+									Gloves and other sports equipment and fishing materials.)
+								</p>
+								<p>
+									Established by Rwandan Fisherman Emmanuel <b>MUSHIMIYIMANA</b>, Who doubles as its managing director.
+								</p>
+								<p>Fondamen started as a small Company in 2020, but it is growing day by day to becoe one of the largest 
+									Company in Rwanda , Serving everywhere in the country their products with its main retail and wholesale shop, located at Nyarugenge Kigali City,
+									Fondamem is known across the region of great lakes for figh qualit water sports materials, sport clothes, boat equipments and 
+									fishing accessories.
+								</p>
+								<p>Fondamem Imports most of its products from countries such as CHINA, UAE, FRANCE and INDIA.</p>
+							</div>
                             <ul class="fh5co-social-icons">
                                 <li><a href="#"><i class="icon-facebook"></i></a></li>
                                 <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -133,54 +123,9 @@
             </div>
         </div>
 
-        <footer id="fh5co-footer" role="contentinfo">
-			<div class="container">
-				<div class="row row-pb-md">
-					<div class="col-md-4 fh5co-widget">
-						<h4>Fondmem</h4>
-						<p>FONDAMEM Is company which sell the product for swimming.</p>
-					</div>
-					<div class="col-md-4 col-md-push-1">
-						<h4>Links</h4>
-						<ul class="fh5co-footer-links">
-							<li><a href="../index.html">Home</a></li>
-							<li><a href="aboutus.html">About</a></li>
-							<li><a href="contactus.html">Contact</a></li>
-						</ul>
-					</div>
-	
-					<div class="col-md-4 col-md-push-1">
-						<h4>Contact Information</h4>
-						<ul class="fh5co-footer-links">
-							<li>Nkombo-Rusizi, <br> Iburengerazuba-RWANDA</li>
-							<li>Tel:<a href="tel://+250788780238">+250 788 780 238</a></li>
-							<li>Tel:<a href="tel://+250782321924">+250 782 321 924</a></li>
-							<li>Tel:<a href="tel://+250783814611">+250 783 814 611</a></li>
-							<li>Emai:<a href="mailto:fondamem@gmail.com">fondamem@gmail.com</a></li>
-							<li><a href="../index.html">Sport Club Activity</a></li>
-						</ul>
-					</div>
-	
-				</div>
-	
-				<div class="row copyright">
-					<div class="col-md-12 text-center">
-						<p>
-							<small class="block">&copy; 2020 . All Rights Reserved.</small> 
-							<!-- <small class="block">Designed by <a href="https://web.facebook.com/tuyandre20" target="_blank">Tuyandre</a></small> -->
-						</p>
-						<p>
-							<ul class="fh5co-social-icons">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							</ul>
-						</p>
-					</div>
-				</div>
-	
-			</div>
-		</footer>
+	<?php
+	include '../layout/footer.php';
+	?>
     </div>
     <div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
