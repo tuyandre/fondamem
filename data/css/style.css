@@ -598,11 +598,11 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 1em 0;
   clear: both;
 }
-#fh5co-content{
+/* #fh5co-content{ */
   /* background-image: url(../images/background/bg1.jpg) !important ; */
-  background-color: lightsteelblue;
+  /* background-color: lightsteelblue; */
 
-}
+/* } */
 
 @media screen and (max-width: 768px) {
   #fh5co-about,
