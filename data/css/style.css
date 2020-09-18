@@ -965,16 +965,22 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: normal;
   display: block;
 }
-
+@media screen and (min-width: 769px) {
 #fh5co-footer {
   /* background: #efefef !important; */
   background-image: url(../images/background/bg1.jpg);
+  background-repeat: no-repeat;
+}
 }
 #fh5co-footer .fh5co-footer-links {
   padding: 0;
   margin: 0;
 }
 @media screen and (max-width: 768px) {
+  #fh5co-footer{
+    background-color: rgb(193, 226, 240) !important;
+    /* background-image: url(../images/background/bg3.jpg); */
+  }
   #fh5co-footer .fh5co-footer-links {
     margin-bottom: 30px;
   }

@@ -233,7 +233,14 @@ if (isset($_GET['logout'])) {
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
+            <?php
+              include 'connection/connect.php';
+              $conn = OpenCon();
+              $query1 = "SELECT * FROM products" ;
+              $result1=mysqli_query($conn,$query1);
+              $rowcount1=mysqli_num_rows($result1);
+              ?>
+              <h3><?php echo $rowcount1?></h3>
 
               <p>Sport Products</p>
             </div>
